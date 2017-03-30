@@ -1,0 +1,28 @@
+{
+  "name": "liketor",
+  "version": "1.0.0",
+  "description": "a simple test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viterbox/liketor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viterbox/liketor/issues"
+  },
+  "homepage": "https://github.com/viterbox/liketor#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "ioredis": "^2.5.0"
+  }
+}
