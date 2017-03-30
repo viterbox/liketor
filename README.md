@@ -9,6 +9,7 @@ Redis version 3.2.8
 # Steps
 
 npm install
+
 npm run start
 
 # Sample CURLs
