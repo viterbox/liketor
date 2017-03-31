@@ -1,24 +1,24 @@
-var Redis = require("ioredis")
+const Redis = require('ioredis');
 
-var state = {
-  db: null,
-}
+const state = {
+	db: null,
+};
 
-var MODE_TEST = "mode_test"
-  , MODE_PRODUCTION = "mode_production"
+const MODE_TEST = 'mode_test';
+const MODE_PRODUCTION = 'mode_production';
 
-exports.MODE_TEST = MODE_TEST
-exports.MODE_PRODUCTION = MODE_PRODUCTION
+exports.MODE_TEST = MODE_TEST;
+exports.MODE_PRODUCTION = MODE_PRODUCTION;
 
 exports.connect = function(mode) {
-  state.db = new Redis()
+	state.db = new Redis();
 
-  // Use different DB when testing
-  if (mode === MODE_TEST) {
-    state.db.select(15)
-  }
-}
+	// Use different DB when testing
+	if (mode === MODE_TEST) {
+		state.db.select(15);
+	}
+};
 
 exports.get = function() {
-  return state.db
-}
+	return state.db;
+};

@@ -1,13 +1,13 @@
-var Redis = require("ioredis")
+const Redis = require('ioredis');
 
-var state = {
-  db: null,
-}
+const state = {
+	db: null,
+};
 
-exports.connect = function(mode) {
-  state.db = new Redis()
-}
+exports.connect = function() {
+	state.db = new Redis();
+};
 
 exports.get = function() {
-  return state.db
-}
+	return state.db;
+};
