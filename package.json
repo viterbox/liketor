@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "lint": "./node_modules/.bin/eslint . --ext .js --quiet"
+  },
+  "engines": {
+    "node": "6.2.0",
+    "npm": "3.8.9"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,7 @@
   },
   "homepage": "https://github.com/viterbox/liketor#readme",
   "devDependencies": {
+    "eslint": "^3.18.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
