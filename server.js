@@ -17,4 +17,4 @@ routes(app);
 db.connect();
 app.listen(port);
 
-console.log('todo list RESTful API server started on: ' + port);
+console.log('Liketor RESTful API server started on: ' + port);
