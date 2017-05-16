@@ -23,3 +23,10 @@ GET allmovieLikes
 curl "http://localhost:3000/movies/1/likes" -verbose
 
 
+GET nowPlaying
+
+curl "http://localhost:3000/movies/nowplaying" -verbose
+
+
+
+
