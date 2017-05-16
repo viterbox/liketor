@@ -7,6 +7,6 @@ exports.getMoviesNowPlaying = function(req, res) {
 			res.json({
 				result
 			});
-	});
+		});
 
 };

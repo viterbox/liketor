@@ -5,8 +5,8 @@ exports.getMoviesNowPlaying = function(callback) {
 
 	const mdb = require('moviedb')(movieApiKey);
 
-	mdb.miscNowPlayingMovies({}, function(err, res){
-  		callback(err,res)
+	mdb.miscNowPlayingMovies({},function(err,res) {
+		callback(err,res);
 	});
 
 };
