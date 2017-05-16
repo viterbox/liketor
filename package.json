@@ -29,6 +29,7 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "ioredis": "^2.5.0"
+    "ioredis": "^2.5.0",
+    "moviedb": "^0.2.8"
   }
 }
