@@ -1,4 +1,4 @@
-const db = require('../../db');
+const db = require('../DBs/redisDb');
 
 exports.add = function(movieId, userId, like,callback) {
 	const data = {
