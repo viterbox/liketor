@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-const db = require('./api/DBs/redisDb');
+const db = require('./api/DBs/mongoDb');
 
 const routes = require('./api/routers/liketorRouter');
 routes(app);
