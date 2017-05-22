@@ -4,19 +4,8 @@ const state = {
 	db: null,
 };
 
-const MODE_TEST = 'mode_test';
-const MODE_PRODUCTION = 'mode_production';
-
-exports.MODE_TEST = MODE_TEST;
-exports.MODE_PRODUCTION = MODE_PRODUCTION;
-
-exports.connect = function(mode) {
+exports.connect = function() {
 	state.db = new Redis();
-
-	// Use different DB when testing
-	if (mode === MODE_TEST) {
-		state.db.select(15);
-	}
 };
 
 exports.get = function() {
