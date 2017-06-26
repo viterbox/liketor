@@ -3,7 +3,7 @@ a simple test
 
 # Dependencies
 
-Redis version 3.2.8
+MongoDb 3.*
 
 
 # Steps
